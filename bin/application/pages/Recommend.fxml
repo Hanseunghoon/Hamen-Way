@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: #66CEA8;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="59.0" layoutY="25.0" rotate="-12.5">
+               <image>
+                  <Image url="@../resources/food.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="125.0" layoutY="25.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+               <font>
+                  <Font name="Galvji Oblique" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="Homebtn" layoutX="-9.0" layoutY="103.0" mnemonicParsing="false" onAction="#HomeButton" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+      <Button fx:id="NearbyBtn" layoutX="-8.0" layoutY="272.0" mnemonicParsing="false" onAction="#NearbyButton" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+      <Button fx:id="RecommendBtn" layoutX="-12.0" layoutY="440.0" mnemonicParsing="false" onAction="#RecommendBtn" prefHeight="160.0" prefWidth="244.0" style="-fx-background-color: #66CEA8;" />
+      <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="84.0" layoutY="160.0">
+         <image>
+            <Image url="@../resources/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="322.0">
+         <image>
+            <Image url="@../resources/nearby.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="79.0" layoutY="493.0">
+         <image>
+            <Image url="@../resources/thumbs.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="213.0" text="홈" textFill="WHITE" />
+      <Label layoutX="84.0" layoutY="387.0" text="근처 맛집" textFill="WHITE" />
+      <Label layoutX="83.0" layoutY="548.0" text="추천 받기" textFill="WHITE" />
+      <AnchorPane layoutX="115.0" layoutY="105.0" prefHeight="495.0" prefWidth="513.0">
+      		         <children>
+            <ImageView fx:id="rouletteimg" fitHeight="240.0" fitWidth="244.0" layoutX="282.0" layoutY="119.0">
+               <image>
+                  <Image url="@../resources/roulette.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="302.0" layoutY="63.0" text="오늘 메뉴를 추천 받아 볼까요 ?" textFill="#a19494">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="326.0" layoutY="89.0" text="아래 PLAY 버튼을 눌러주세요" textFill="#bcafaf">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+         	<Button fx:id="rouletteplay" layoutX="236.0" layoutY="384.0" mnemonicParsing="false" onAction="#rplay" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #66CEA8; -fx-background-radius: 30;" />
+      <Button fx:id="roulettestop" layoutX="458.0" layoutY="384.0" mnemonicParsing="false" onAction="#rstop" prefHeight="96.0" prefWidth="115.0" style="-fx-background-color: #66CEA8; -fx-background-radius: 30;" />
+      <ImageView fitHeight="64.0" fitWidth="63.0" layoutX="262.0" layoutY="400.0">
+         <image>
+            <Image url="@../resources/play.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="63.0" layoutX="484.0" layoutY="400.0">
+         <image>
+            <Image url="@../resources/pause.png" />
+         </image>
+      </ImageView>
+      </AnchorPane>
+   </children>
+</AnchorPane>

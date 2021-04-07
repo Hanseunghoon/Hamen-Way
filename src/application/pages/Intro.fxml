@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <AnchorPane prefHeight="253.0" prefWidth="800.0" style="-fx-background-color: #66CEA8;">
+         <children>
+            <ImageView fitHeight="107.0" fitWidth="111.0" layoutX="59.0" layoutY="73.0" rotate="-12.5">
+               <image>
+                  <Image url="@../resources/food.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="180.0" layoutY="93.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+               <font>
+                  <Font name="Galvji Oblique" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="187.0" layoutY="120.0" prefHeight="46.0" prefWidth="328.0" text="메뉴를 찾아 헤매는 우릴 위한 서비스" textFill="WHITE">
+               <font>
+                  <Font name="Galvji Oblique" size="11.0" />
+               </font>
+            </Label>
+            <Button layoutX="46.0" layoutY="64.0" mnemonicParsing="false" onAction="#musicstart_main" prefHeight="128.0" prefWidth="132.0" style="-fx-background-color: transparent;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="OwnerIntroBtn" layoutX="170.0" layoutY="306.0" mnemonicParsing="false" onAction="#OBtn" prefHeight="228.0" prefWidth="229.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 50;" />
+      <Button fx:id="CustomerIntroBtn" layoutX="426.0" layoutY="307.0" mnemonicParsing="false" onAction="#CBtn" prefHeight="228.0" prefWidth="229.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 50;" />
+
+                                                            <ImageView fitHeight="94.0" fitWidth="83.0" layoutX="499.0" layoutY="366.0">
+         <image>
+            <Image url="@../resources/customer.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="216.0" layoutY="464.0" style="-fx-backgroud-radius: 10;;" text="식당 주인으로 접속하기" textFill="#6b6b6b">
+         <font>
+            <Font name="Galvji Oblique" size="13.0" />
+         </font>
+      </Label>
+      
+                                    <ImageView fitHeight="137.0" fitWidth="147.0" layoutX="212.0" layoutY="336.0">
+         <image>
+            <Image url="@../resources/owner.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="487.0" layoutY="464.0" text="손님으로 접속하기" textFill="#727272" />
+   </children>
+</AnchorPane>

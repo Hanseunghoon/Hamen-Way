@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+	<children>
+		<AnchorPane prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: #66CEA8;">
+			<children>
+				<ImageView fitHeight="46.0" fitWidth="48.0" layoutX="59.0" layoutY="25.0" rotate="-12.5">
+					<image>
+						<Image url="@../resources/food.png" />
+					</image>
+				</ImageView>
+				<Label layoutX="125.0" layoutY="25.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+					<font>
+						<Font name="Galvji Oblique" size="22.0" />
+					</font>
+				</Label>
+				<Button fx:id="searchLocation" layoutX="569.0" layoutY="34.0" mnemonicParsing="false" onAction="#getMenuLoc10" text="지역 별 검색" />
+				<TextField fx:id="inputLocation" layoutX="391.0" layoutY="34.0" />
+				<Button fx:id="searchCategory" layoutX="681.0" layoutY="34.0" mnemonicParsing="false" onAction="#getMenuTop10" text="메뉴 별 검색" />
+			</children>
+		</AnchorPane>
+		<Button fx:id="Homebtn" layoutX="-9.0" layoutY="103.0" mnemonicParsing="false" onAction="#HomeButton" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+		<Button fx:id="NearbyBtn" layoutX="-8.0" layoutY="272.0" mnemonicParsing="false" onAction="#NearbyButton" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+		<Button fx:id="RecommendBtn" layoutX="-8.0" layoutY="440.0" mnemonicParsing="false" onAction="#RecommendBtn" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+		<ImageView fitHeight="46.0" fitWidth="55.0" layoutX="84.0" layoutY="160.0">
+			<image>
+				<Image url="@../resources/home.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="322.0">
+			<image>
+				<Image url="@../resources/nearby.png" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="55.0" fitWidth="65.0" layoutX="79.0" layoutY="493.0">
+			<image>
+				<Image url="@../resources/thumbs.png" />
+			</image>
+		</ImageView>
+		<Label layoutX="105.0" layoutY="213.0" text="홈" textFill="WHITE" />
+		<Label layoutX="84.0" layoutY="387.0" text="근처 맛집" textFill="WHITE" />
+		<Label layoutX="83.0" layoutY="548.0" text="추천 받기" textFill="WHITE" />
+		<ScrollPane layoutX="233.0" layoutY="100.0" prefHeight="495.0" prefWidth="561.0">
+			<content>
+				<AnchorPane fx:id="ap" prefHeight="814.0" prefWidth="600.0" style="-fx-background-color: #14242B;">
+					<children>
+						<AnchorPane fx:id="Nearbypane1" onMouseClicked="#RestaurantInformation1" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName1" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating1" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation1" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView1" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육1.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane2" layoutX="300.0" onMouseClicked="#RestaurantInformation2" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName2" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating2" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation2" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView2" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육2.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane3" layoutY="200.0" onMouseClicked="#RestaurantInformation3" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName3" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating3" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation3" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView3" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육3.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane4" layoutX="300.0" layoutY="200.0" onMouseClicked="#RestaurantInformation4" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName4" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating4" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation4" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView4" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육4.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane5" layoutY="400.0" onMouseClicked="#RestaurantInformation5" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName5" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating5" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation5" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView5" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육5.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane6" layoutX="300.0" layoutY="400.0" onMouseClicked="#RestaurantInformation6" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName6" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating6" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation6" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView6" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육6.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane7" layoutY="600.0" onMouseClicked="#RestaurantInformation7" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName7" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating7" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation7" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView7" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육7.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane9" layoutY="800.0" onMouseClicked="#RestaurantInformation8" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName9" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating9" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation9" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView9" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육9.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane8" layoutX="300.0" layoutY="600.0" onMouseClicked="#RestaurantInformation9" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName8" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating8" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation8" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView8" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육8.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+						<AnchorPane fx:id="Nearbypane10" layoutX="300.0" layoutY="800.0" onMouseClicked="#RestaurantInformation10" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+							<children>
+								<Label fx:id="restaurantName10" layoutX="21.0" layoutY="133.0" prefHeight="15.0" prefWidth="128.0" />
+								<Label fx:id="restaurantRating10" layoutX="200.0" layoutY="133.0" />
+								<Label fx:id="restaurantLocation10" layoutX="21.0" layoutY="157.0" />
+								<ImageView fx:id="imgView10" fitHeight="120.0" fitWidth="160.0" layoutX="70.0" pickOnBounds="true" visible="false">
+									<image>
+										<Image url="@../resources/제육10.jpg" />
+									</image>
+								</ImageView>
+							</children>
+						</AnchorPane>
+					</children>
+				</AnchorPane>
+			</content>
+		</ScrollPane>
+	</children>
+</AnchorPane>

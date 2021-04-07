@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="200.0" prefWidth="237.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="userNick" layoutX="21.0" layoutY="91.0" prefHeight="19.0" prefWidth="152.0" text="댓글유저1" />
+      <Label fx:id="rating" layoutX="184.0" layoutY="82.0" prefHeight="37.0" prefWidth="32.0" style="-fx-font-size: 20; -fx-background-color: FAF4C0; -fx-background-radius: 30;" text=" 5" textAlignment="CENTER" textFill="#959e6b" />
+      <Text fx:id="reviewText" layoutX="21.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="너무 맛있어요!" wrappingWidth="195.00000596046448" />
+      <Label fx:id="date" layoutX="68.0" layoutY="41.0" prefHeight="19.0" prefWidth="125.0" text="2021-04-04" textFill="#b9b2b2" />
+   </children>
+</AnchorPane>

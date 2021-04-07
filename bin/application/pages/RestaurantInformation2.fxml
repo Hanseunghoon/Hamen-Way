@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="863.0" style="-fx-background-color: #66CEA8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RestaurantInformationController">
+   <children>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="63.0" layoutY="30.0" rotate="-21.8">
+         <image>
+            <Image url="@../resources/food.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="30.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+         <font>
+            <Font name="Galvji Oblique" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="28.0" layoutY="90.0" prefHeight="479.0" prefWidth="810.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         	   <children>
+      <Button fx:id="btnWriteReview" layoutX="608.0" layoutY="296.0" mnemonicParsing="false" onAction="#WriteReview" prefHeight="78.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: #7f7575; -fx-border-radius: 15;" text="리뷰 쓰러가기" textFill="#7f7575" />
+      <Button fx:id="ResInfo_backbtn" layoutX="622.0" layoutY="392.0" mnemonicParsing="false" onAction="#RestaurantInfo_BackBtn" prefHeight="35.0" prefWidth="112.0" style="-fx-background-color: white; -fx-border-color: #7f7575; -fx-border-radius: 15;" text="뒤로가기" textFill="#7f7575" />
+            <AnchorPane layoutX="41.0" layoutY="53.0" prefHeight="374.0" prefWidth="219.0" style="-fx-background-color: #66CEA8; -fx-background-radius: 20;">
+               <children>
+                  <AnchorPane layoutX="10.0" layoutY="148.0" prefHeight="211.0" prefWidth="199.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <Label fx:id="res_name" alignment="CENTER" layoutX="25.0" layoutY="50.0" prefHeight="15.0" prefWidth="152.0" textFill="#9a8383" />
+                        <Label layoutX="14.0" layoutY="82.0" text="별점" textFill="#867c7c" />
+                        <Label fx:id="res_grade" layoutX="90.0" layoutY="80.0" style="-fx-background-color: FAF4C0; -fx-background-radius: 30;">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="120.0" text="위치" textFill="#867c7c" />
+                        <Label fx:id="res_position" layoutX="52.0" layoutY="120.0" />
+                        <Label layoutX="14.0" layoutY="160.0" text="업종" textFill="#867c7c" />
+                        <Label fx:id="res_category" layoutX="52.0" layoutY="160.0" />
+                     </children>
+                  </AnchorPane>
+                  <ImageView fitHeight="91.0" fitWidth="102.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/owner.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="check_resinfo" layoutX="40.0" layoutY="105.0" mnemonicParsing="false" onAction="#showRestaurantInfo" prefHeight="29.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: a49393; -fx-border-radius: 20;" text="가게 정보 확인하기" textFill="#a49393" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="284.0" layoutY="53.0" prefHeight="91.0" prefWidth="290.0" style="-fx-background-color: #66CEA8;">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="47.0" layoutX="202.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/thumbs.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="checkReview" layoutX="26.0" layoutY="32.0" mnemonicParsing="false" onAction="#showRestaurantReview" prefHeight="29.0" prefWidth="140.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: a49393; -fx-border-radius: 20;" text="리뷰 확인하기" textFill="#a49393" />
+               </children>
+            </AnchorPane>
+            <ListView fx:id="listViewReview" layoutX="284.0" layoutY="144.0" prefHeight="291.0" prefWidth="290.0" />
+            <PieChart fx:id="pieChart" layoutX="578.0" layoutY="63.0" prefHeight="163.0" prefWidth="199.0" />
+            <Button layoutX="602.0" layoutY="240.0" mnemonicParsing="false" onAction="#btn" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: white; -fx-border-color: #7f7575; -fx-border-radius: 15;" text="별점 분포 확인하기" textFill="#7f7575" />
+   </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

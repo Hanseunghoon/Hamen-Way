@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #66CEA8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.WriteReViewController">
+   <children>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="63.0" layoutY="37.0" rotate="-21.8">
+         <image>
+            <Image url="@../resources/food.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="128.0" layoutY="37.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+         <font>
+            <Font name="Galvji Oblique" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="30.0" layoutY="106.0" prefHeight="470.0" prefWidth="640.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+      		<children>
+            <Circle fill="#66cea8" layoutX="206.0" layoutY="91.0" radius="20.0" stroke="#66cea8" strokeType="INSIDE" />
+			      <Button fx:id="btn_writecomplete" layoutX="481.0" layoutY="308.0" mnemonicParsing="false" onAction="#WriteReviewComplete" prefHeight="123.0" prefWidth="120.0" style="-fx-background-color: white; -fx-border-color: #8d8181; -fx-border-radius: 10;" textFill="#8d8181">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+			      <ListView fx:id="WriteReviewListView" layoutX="184.0" layoutY="166.0" prefHeight="81.0" prefWidth="308.0" />
+			      <Label fx:id="menuPrint" layoutX="246.0" layoutY="269.0" text="메뉴 이름" textFill="#d07070">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+			      <Button fx:id="watchMenu" layoutX="276.0" layoutY="127.0" mnemonicParsing="false" onAction="#showMenuList" prefHeight="19.0" prefWidth="120.0" style="-fx-background-color: white; -fx-border-color: #8d8181; -fx-border-radius: 20;" text="메뉴 확인하기" textFill="#8d8181" />
+			      <TextArea fx:id="txtAreaReview" layoutX="69.0" layoutY="314.0" prefHeight="116.0" prefWidth="412.0" promptText="메뉴에 대한 평가 부탁드려요 !" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="307.0" />
+            <Label layoutX="252.0" layoutY="33.0" text="식사는 맛있게 하셨나요 ?" textFill="#8d8181">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="269.0" text="오늘 메뉴는" textFill="#a49292" />
+            <Label layoutX="375.0" layoutY="269.0" text="였네요" textFill="#a49292" />
+            <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="421.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/customer.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="514.0" layoutY="360.0" text="작성 완료" textFill="#8d8181" />
+            <ImageView fitHeight="29.0" fitWidth="39.0" layoutX="191.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/thumbs.png" />
+               </image>
+            </ImageView>
+            <Rating fx:id="rating" layoutX="250.0" layoutY="76.0" prefHeight="32.0" prefWidth="221.0" rating="0.0" />
+			 </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

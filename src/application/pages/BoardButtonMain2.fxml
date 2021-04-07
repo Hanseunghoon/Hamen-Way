@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.BoardButtonMainController">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="800.0" style="-fx-background-color: #66CEA8;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="59.0" layoutY="25.0" rotate="-12.5">
+               <image>
+                  <Image url="@../resources/food.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="125.0" layoutY="25.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+               <font>
+                  <Font name="Galvji Oblique" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutBtn" layoutX="674.0" layoutY="34.0" mnemonicParsing="false" onAction="#LogOutBtn" text="Log out" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="228.0" layoutY="96.0" prefHeight="507.0" prefWidth="574.0">
+         <children>
+            <AnchorPane layoutX="93.0" layoutY="169.0" prefHeight="290.0" prefWidth="388.0" style="-fx-background-color: #F6F6F6; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="42.0" layoutY="14.0" text="사용자 이름" />
+                  <Label fx:id="info_username" layoutX="106.0" layoutY="41.0" prefHeight="15.0" prefWidth="140.0" />
+                  <Label layoutX="42.0" layoutY="105.0" text="나이" />
+                  <Label fx:id="info_userage" layoutX="106.0" layoutY="130.0" prefHeight="15.0" prefWidth="140.0" />
+                  <Label layoutX="40.0" layoutY="198.0" text="닉네임" />
+                  <Label fx:id="info_userNickName" layoutX="106.0" layoutY="226.0" prefHeight="15.0" prefWidth="140.0" />
+                  <Label layoutX="46.0" layoutY="72.0" text="-----------------------------------------------------" />
+                  <Label layoutX="46.0" layoutY="158.0" text="-----------------------------------------------------" />
+                  <Label layoutX="47.0" layoutY="252.0" text="-----------------------------------------------------" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="81.0" fitWidth="87.0" layoutX="250.0" layoutY="57.0">
+               <image>
+                  <Image url="@../resources/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username_main" layoutX="235.0" layoutY="138.0" text="유저" />
+            <Label fx:id="user_content_continue" layoutX="270.0" layoutY="138.0" text="정보 확인하기" />
+            <Button fx:id="userInfobtn" layoutX="256.0" layoutY="65.0" mnemonicParsing="false" onAction="#ShowUserInfo" prefHeight="64.0" prefWidth="78.0" style="-fx-background-color: transparent;" />
+         </children></AnchorPane>
+      <Button fx:id="Homebtn" layoutX="-9.0" layoutY="103.0" mnemonicParsing="false" onAction="#HomeButton" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+      <Button fx:id="NearbyBtn" layoutX="-8.0" layoutY="272.0" mnemonicParsing="false" onAction="#NearbyButton" prefHeight="160.0" prefWidth="237.0" style="-fx-background-color: #66CEA8;" />
+      <Button fx:id="RecommendBtn" layoutX="-12.0" layoutY="440.0" mnemonicParsing="false" onAction="#RecommendBtn" prefHeight="160.0" prefWidth="244.0" style="-fx-background-color: #66CEA8;" />
+      <ImageView fitHeight="46.0" fitWidth="55.0" layoutX="84.0" layoutY="160.0">
+         <image>
+            <Image url="@../resources/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="82.0" layoutY="322.0">
+         <image>
+            <Image url="@../resources/nearby.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="79.0" layoutY="493.0">
+         <image>
+            <Image url="@../resources/thumbs.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="213.0" text="홈" textFill="WHITE" />
+      <Label layoutX="84.0" layoutY="387.0" text="근처 맛집" textFill="WHITE" />
+      <Label layoutX="83.0" layoutY="548.0" text="추천 받기" textFill="WHITE" />
+   </children>
+</AnchorPane>

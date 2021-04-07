@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="600.0" style="-fx-background-color: #66CEA8;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="63.0" layoutY="30.0" rotate="-21.8">
+         <image>
+            <Image url="@../resources/food.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="30.0" prefHeight="46.0" prefWidth="328.0" text="HEMAN WAY" textFill="WHITE">
+         <font>
+            <Font name="Galvji Oblique" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="42.0" layoutY="96.0" prefHeight="414.0" prefWidth="517.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+         <children>
+            <ImageView fx:id="foodImg" fitHeight="190.0" fitWidth="190.0" layoutX="31.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../resources/recommend1.png" />
+               </image></ImageView>
+            <Label layoutX="157.0" layoutY="70.0" text="헤맨웨이가 추천하는 오늘 점심 !" textFill="#8a7f7f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="308.0" text="이제 주변의 맛집을 알아보러 가볼까요?" textFill="#8a7f7f">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="roulletetoCommu" layoutX="204.0" layoutY="346.0" mnemonicParsing="false" onAction="#rtc" prefHeight="29.0" prefWidth="126.0" style="-fx-background-color: white; -fx-border-color: black;" text="맛집 검색하러 가기">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="menurecommendscript" layoutX="165.0" layoutY="281.0" text="오늘의 룰렛 결과가 마음에 드시나요? " textFill="#8a7f7f">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="showResBtn" layoutX="144.0" layoutY="106.0" mnemonicParsing="false" onAction="#showResult" prefHeight="72.0" prefWidth="244.0" style="-fx-background-color: #cccccc; -fx-border-color: black;" text="돌려돌려 메뉴판 룰렛결과 확인하기" textAlignment="RIGHT" textFill="#15b9c2" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="roulletResLabel" layoutX="268.0" layoutY="213.0" prefHeight="42.0" prefWidth="164.0" textAlignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
