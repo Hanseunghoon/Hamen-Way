@@ -3,8 +3,6 @@
 
 > " **🍴 '점심 뭐 먹지?' 더 이상 고민하지 말자! 🤩 "**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c921b31a-0e2e-44a5-8eb3-140dd2fd05d6/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c921b31a-0e2e-44a5-8eb3-140dd2fd05d6/Untitled.png)
-
 ## 🍴**프로젝트 설명**
 
 메뉴 및 맛집 추천 플랫폼 ( ref 배달의 민족, 망고 플레이트 )
