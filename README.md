@@ -3,6 +3,8 @@
 
 > " **🍴 '점심 뭐 먹지?' 더 이상 고민하지 말자! 🤩 "**
 
+
+
 ## 🍴**프로젝트 설명**
 
 메뉴 및 맛집 추천 플랫폼 ( ref 배달의 민족, 망고 플레이트 )
@@ -75,7 +77,7 @@
 
 ## 🍴**프로젝트 구성원**
 **HYUNDAI IT&E First Project by Team 5**
-- [**김석윤](https://github.com/gawibawibo)[(](https://github.com/Hanseunghoon)Data Modeling & Back-End)**
-- 반어진[**(](https://github.com/Hanseunghoon)Design & Front-End)**
-- 윤예빈[**(](https://github.com/Hanseunghoon)Design & Front-End)**
-- [**한승훈(](https://github.com/Hanseunghoon)Data Modeling & Back-End)**
+- [김석윤](https://github.com/gawibawibo)[(](https://github.com/Hanseunghoon)Data Modeling & Back-End)
+- 반어진[**(](https://github.com/Hanseunghoon)Design & Front-End)
+- 윤예빈[**(](https://github.com/Hanseunghoon)Design & Front-End)
+- [한승훈](https://github.com/Hanseunghoon)Data Modeling & Back-End)
