@@ -77,7 +77,7 @@
 
 ## 🍴**프로젝트 구성원**
 **HYUNDAI IT&E First Project by Team 5**
-- [김석윤](https://github.com/gawibawibo)[(](https://github.com/Hanseunghoon)Data Modeling & Back-End)
+- [김석윤](https://github.com/gawibawibo)(Data Modeling & Back-End)
 - 반어진(Design & Front-End)
 - 윤예빈(Design & Front-End)
-- [한승훈](https://github.com/Hanseunghoon)Data Modeling & Back-End)
+- [한승훈](https://github.com/Hanseunghoon)(Data Modeling & Back-End)
