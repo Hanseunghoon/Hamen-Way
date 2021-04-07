@@ -41,6 +41,7 @@
 - DB 연동 부분은 **CallableStatement**만 사용
 - 데이터 분석 결과를  Chart로 표현  
 <br/>
+
 ### 2. Database
 
 - 새로운 유저 생성
@@ -59,10 +60,12 @@
     - **PL/SQL Function** 사용
 - **PL/SQL Trigger** 사용  
 <br/>
+
 ### 3. Design Pattern
 
 - **디자인 패턴** 하나 이상 적용할 것  
 <br/>
+
 ### 4. System Design
 
 - ERD
