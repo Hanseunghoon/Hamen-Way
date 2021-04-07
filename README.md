@@ -33,7 +33,7 @@
 - Git  
 <br/>
 
-## 🍴**프로젝트 규칙 및 요구사항**
+## 🍴**프로젝트 규칙 & 요구사항**
 
 ### 1. Java
 
@@ -86,7 +86,7 @@
 4. 상호 피드백  
 <br/>
 
-## 🍴**프로젝트 구성원**
+## 🍴**프로젝트 구성원 & **
 **HYUNDAI IT&E First Project by Team 5**
 - [김석윤](https://github.com/gawibawibo)(Data Modeling & Back-End)
 - [반어진](https://github.com/baneujin)(Design & Front-End)
